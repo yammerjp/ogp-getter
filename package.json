@@ -1,0 +1,17 @@
+{
+  "name": "ogp-getter",
+  "version": "1.0.0",
+  "description": "Fetch and responce HTML meta-data such as OGP-data",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": "https://github.com/basd4g/ogp-getter",
+  "author": "Keisuke Nakayama <baskk4.dt@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "node-html-parser": "^1.2.20"
+  }
+}
