@@ -13,7 +13,7 @@ app.get('/', async (req,res) => {
   }).end();
 });
 
-app.get('/metas', async (req,res) => {
+app.get('/meta', async (req,res) => {
   const url = req.query.url;
 
   const fetchedText = await fetch(url).then(res=>res.text());

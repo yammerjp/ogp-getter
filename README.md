@@ -9,5 +9,5 @@ $ git clone https://github.com/basd4g/ogp-getter.git
 $ cd ogp-getter
 $ yarn
 $ yarn start
-# Please access to http://localhost:3000/metas?url=https://basd4g.net/
+# Please access to http://localhost:3000/meta?url=https://basd4g.net/
 ```
