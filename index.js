@@ -6,7 +6,7 @@ const { parse } = require('node-html-parser');
 const express = require('express');
 const app = express();
 
-// $ curl http://localhost:3000/
+// $ curl http://localhost:3001/
 app.get('/', async (req,res) => {
   res.status(200).json({
     live:true,
@@ -22,7 +22,7 @@ const createMetaStrings = async (url) => {
   return metaStrings;
 };
 
-// $ curl http://localhost:3000/meta?url=https://basd4g.net/
+// $ curl http://localhost:3001/meta?url=https://basd4g.net/
 app.get('/meta', async (req,res) => {
   const url = req.query.url
 
@@ -46,7 +46,7 @@ const ogpString2ogpObject = ogpString => {
   return { property, content };
 };
 
-// $ curl http://localhost:3000/ogp?url=https://basd4g.net/
+// $ curl http://localhost:3001/ogp?url=https://basd4g.net/
 app.get('/ogp', async (req,res) => {
   const url = req.query.url
 
@@ -67,5 +67,5 @@ app.get('/ogp', async (req,res) => {
   });
 });
 
-const port = process.env.PORT || 3000;
-app.listen(3000, () => console.log(`listening on port ${port}`));
+const port = process.env.PORT || 3001;
+app.listen(3001, () => console.log(`listening on port ${port}`));
