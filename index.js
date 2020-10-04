@@ -68,4 +68,4 @@ app.get('/ogp', async (req,res) => {
 });
 
 const port = process.env.PORT || 3001;
-app.listen(3001, () => console.log(`listening on port ${port}`));
+app.listen(port, () => console.log(`listening on port ${port}`));
