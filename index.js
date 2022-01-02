@@ -4,7 +4,9 @@ const fetch = require('node-fetch');
 const { parse } = require('node-html-parser');
 
 const express = require('express');
+const cors = require('cors')
 const app = express();
+app.use(cors())
 
 // $ curl http://localhost:3001/
 app.get('/', async (req,res) => {
